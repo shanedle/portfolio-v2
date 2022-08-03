@@ -30,17 +30,17 @@ export default function Header() {
           </div>
           <div
             className="cursor-pointer"
-            onClick={() => router.push("/Projects")}
+            onClick={() => router.push("/projects")}
           >
             <div
               className={`hidden md:block px-1 text-lg uppercase font-semibold 
-              ${router.pathname === "/Projects" ? "text-blue-200" : ""}`}
+              ${router.pathname === "/projects" ? "text-blue-200" : ""}`}
             >
               Projects
             </div>
             <GoRepo
               className={`text-2xl md:hidden ${
-                router.pathname === "/Projects" ? "text-blue-200" : ""
+                router.pathname === "/projects" ? "text-blue-200" : ""
               }`}
             />
           </div>

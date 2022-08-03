@@ -1,4 +1,4 @@
-import Socials from "./Socials";
+import Socials from "../Socials";
 import Link from "next/link";
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
           by Shane Le
         </div>
         <div className="flex items-center justify-center space-x-4 py-2">
-          {Socials.map((social) => (
+          {Socials?.map((social) => (
             <div key={social.id}>
               <Link href={social.path} passHref>
                 <a className="text-2xl" target="_blank">

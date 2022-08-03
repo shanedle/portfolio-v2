@@ -11,8 +11,8 @@ import { setContext } from "@apollo/client/link/context";
 import { SiGithub } from "react-icons/si";
 import { IoRocketOutline } from "react-icons/io5";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function Projects({ pinnedItems }) {
   return (
@@ -28,37 +28,6 @@ export default function Projects({ pinnedItems }) {
               <h1 className="text-center text-xl font-semibold p-2 mb-3 rounded-t-lg bg-gray-800">
                 {item.name}
               </h1>
-              <div className="mx-5 relative">
-                <Image
-                  className="rounded-lg"
-                  src={item.openGraphImageUrl}
-                  width="640px"
-                  height="420px"
-                  alt={item.name}
-                />
-                <div className="absolute inset-1 top-auto pb-2 flex justify-center items-center">
-                  {item.object && (
-                    <p className="flex cursor-pointer border border-cyan-600 shadow-lg bg-teal-500 text-gray-800 hover:text-blue-900 rounded-full px-3 py-1 text-xs md:text:md font-bold m-1">
-                      <p className="pr-1">Commits: </p>
-                      {item.object.history.totalCount}
-                    </p>
-                  )}
-
-                  {item.cloneCount && (
-                    <p className="inline-block cursor-pointer border border-cyan-600 shadow-lg bg-teal-500 text-gray-800 hover:text-blue-900 rounded-full px-3 py-1 text-xs md:text:md font-bold m-1">
-                      <p className="pr-1">Cloned:</p>
-                      {item.cloneCount}
-                    </p>
-                  )}
-
-                  {item.viewCount && (
-                    <p className="inline-block cursor-pointer border border-cyan-600 shadow-lg bg-teal-500 text-gray-800 hover:text-blue-900 rounded-full px-3 py-1 text-xs md:text:md font-bold m-1">
-                      <p className="pr-1">Views:</p>
-                      {item.viewCount}
-                    </p>
-                  )}
-                </div>
-              </div>
               <p className="py-2 mx-5">{item.description}</p>
               {/* Tags */}
               <div className="mx-5 pb-2 flex flex-wrap justify-center">
