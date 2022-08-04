@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="bg-gray-900 bottom-0 min-w-full  border-t border-blue-200">
-      <div className="md:max-w-4xl xl:max-w-6xl mx-auto text-blue-200 flex justify-between items-center">
+    <div className="bg-zinc-900 bottom-0 min-w-full">
+      <div className="md:max-w-4xl xl:max-w-6xl mx-auto text-rose-200 flex justify-between items-center px-4 md:px-0">
         <div>
           &copy; {new Date().getFullYear()}, Made with{" "}
           <span role="img" aria-label="heart">
@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center justify-center space-x-4 py-2">
           {Socials?.map((social) => (
-            <div key={social.id}>
+            <div key={social.id} className="text-rose-600 hover:text-rose-800">
               <Link href={social.path} passHref>
                 <a className="text-2xl" target="_blank">
                   {social.icon}
