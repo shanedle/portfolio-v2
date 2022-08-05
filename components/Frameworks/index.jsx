@@ -3,6 +3,8 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiChakraui,
+  SiBootstrap,
+  SiMaterialui,
 } from "react-icons/si";
 
 const Frameworks = [
@@ -25,6 +27,16 @@ const Frameworks = [
     id: 4,
     name: "Chakra",
     icon: <SiChakraui />,
+  },
+  {
+    id: 5,
+    name: "Bootstrap",
+    icon: <SiBootstrap />,
+  },
+  {
+    id: 6,
+    name: "Material UI",
+    icon: <SiMaterialui />,
   },
 ];
 
