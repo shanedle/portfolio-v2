@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -11,6 +12,7 @@ import Tools from "../components/Tools";
 import SkillTemplate from "../components/SkillTemplate";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="bg-zinc-900 min-h-screen">
       <Head>
@@ -22,15 +24,12 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <div className="py-4 md:pt-8 mt-24 rounded-lg space-y-5 grid-cols-1 max-w-xs sm:max-w-md md:max-w-2xl xl:max-w-6xl mx-auto">
-        <div className="text-white font-semibold px-5 mb-8 text-center space-y-10">
+      <div className="py-4 md:pt-8 mt-12 rounded-lg grid-cols-1 max-w-xs sm:max-w-md md:max-w-2xl xl:max-w-6xl mx-auto">
+        <div className="text-white font-semibold text-center">
+          {/* Hero Heading Text*/}
           <h1 className="text-2xl md:text-4xl text-center">Hallo!</h1>
-          <p className="text-lg md:text-xl">
-            I’m Shane, a Front End Developer based in a small-town in Norway.
-          </p>
-        </div>
-        <div>
-          <div className="flex items-center justify-center space-x-6 py-2 md:py-5">
+          {/* Hero Social Media Buttons */}
+          <div className="flex items-center justify-center space-x-6 md:py-5">
             {Socials?.map((social) => (
               <div
                 key={social.id}
@@ -44,6 +43,20 @@ export default function Home() {
               </div>
             ))}
           </div>
+          {/* Hero Paragraph Text */}
+          <p className="text-lg md:text-xl">
+            I’m Shane, a Front End Developer based in a small-town in Norway.
+          </p>
+        </div>
+        {/* Hero Button */}
+        <div className="flex items-center justify-center">
+          <button
+            type="button"
+            onClick={() => router.push("/projects")}
+            class="bg-rose-500 hover:bg-rose-700 text-white font-bold py-2 px-4 border border-rose-700 rounded"
+          >
+            Check out my projects
+          </button>
         </div>
       </div>
       {/* Skills & Tools Section */}
