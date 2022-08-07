@@ -8,10 +8,13 @@ export default function Header() {
   return (
     <div className="py-3 bg-zinc-900 bg-opacity-50 sticky top-0 z-50 ">
       {/* Left */}
-      <div className="flex justify-between md:max-w-4xl xl:max-w-6xl mx-auto ">
-        <h1 className="px-3 md:px-0 text-white font-semibold text-lg">
+      <div className="flex justify-between md:max-w-4xl xl:max-w-6xl mx-auto">
+        <div
+          className="px-3 md:px-0 text-white font-semibold text-lg cursor-pointer"
+          onClick={() => router.push("/")}
+        >
           <span className="sm:inline-block">Shane Le</span>
-        </h1>
+        </div>
 
         {/* Right */}
         <div className="flex space-x-8 px-3 md:px-0 text-zinc-400">

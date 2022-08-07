@@ -24,16 +24,16 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <div className="py-4 md:pt-8 mt-12 rounded-lg grid-cols-1 max-w-xs sm:max-w-md md:max-w-2xl xl:max-w-6xl mx-auto">
-        <div className="text-white font-semibold text-center">
+      <div className="mt-12 rounded-lg grid-cols-1 max-w-xs sm:max-w-md md:pt-8 md:max-w-2xl xl:max-w-6xl mx-auto">
+        <div className="flex flex-col space-y-4  font-semibold text-center">
           {/* Hero Heading Text*/}
-          <h1 className="text-2xl md:text-4xl text-center">Hallo!</h1>
+          <h1 className="text-2xl md:text-4xl text-rose-600">Hallo!</h1>
           {/* Hero Social Media Buttons */}
-          <div className="flex items-center justify-center space-x-6 md:py-5">
+          <div className="flex items-center justify-center space-x-6">
             {Socials?.map((social) => (
               <div
                 key={social.id}
-                className="text-rose-600 hover:text-rose-800 pb-3"
+                className="text-rose-600 hover:text-rose-800"
               >
                 <Link href={social.path} passHref>
                   <a className="text-3xl md:text-5xl" target="_blank">
@@ -44,19 +44,19 @@ export default function Home() {
             ))}
           </div>
           {/* Hero Paragraph Text */}
-          <p className="text-lg md:text-xl">
+          <p className="text-lg md:text-xl text-white">
             I’m Shane, a Front End Developer based in a small-town in Norway.
           </p>
-        </div>
-        {/* Hero Button */}
-        <div className="flex items-center justify-center">
-          <button
-            type="button"
-            onClick={() => router.push("/projects")}
-            class="bg-rose-500 hover:bg-rose-700 text-white font-bold py-2 px-4 border border-rose-700 rounded"
-          >
-            Check out my projects
-          </button>
+          {/* Hero Button */}
+          <div className="flex items-center justify-center">
+            <button
+              type="button"
+              onClick={() => router.push("/projects")}
+              class="bg-rose-500 hover:bg-rose-700 text-white font-bold py-2 px-4 border border-rose-700 rounded"
+            >
+              Check out my projects
+            </button>
+          </div>
         </div>
       </div>
       {/* Skills & Tools Section */}
