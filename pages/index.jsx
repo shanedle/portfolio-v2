@@ -53,7 +53,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => router.push("/projects")}
-              class="bg-rose-500 hover:bg-rose-700 text-white font-bold py-2 px-4 border border-rose-700 rounded"
+              className="bg-rose-500 hover:bg-rose-700 text-white font-bold py-2 px-4 border border-rose-700 rounded"
             >
               Check out my projects
             </button>
