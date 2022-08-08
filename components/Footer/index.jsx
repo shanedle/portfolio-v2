@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="bg-zinc-900 bottom-0 min-w-full">
+    <footer className="bg-zinc-900 fixed inset-x-0 bottom-0 min-w-full">
       <div className="md:max-w-4xl xl:max-w-6xl mx-auto text-rose-200 flex justify-between items-center px-4 md:px-0">
         <div>
           &copy; {new Date().getFullYear()}, Made with{" "}
@@ -24,6 +24,6 @@ export default function Footer() {
           ))}
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
