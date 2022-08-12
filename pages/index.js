@@ -2,14 +2,15 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Socials from "../components/Socials";
-import Languages from "../components/Languages";
-import Libraries from "../components/Libraries";
-import Frameworks from "../components/Frameworks";
-import Tools from "../components/Tools";
-import SkillTemplate from "../components/SkillTemplate";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import SkillTemplate from "../components/skillTemplate";
+
+import Socials from "../utils/socials";
+import Languages from "../utils/languages";
+import Libraries from "../utils/libraries";
+import Frameworks from "../utils/frameworks";
+import Tools from "../utils/tools";
 
 export default function Home() {
   const router = useRouter();

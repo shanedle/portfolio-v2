@@ -11,8 +11,8 @@ import { setContext } from "@apollo/client/link/context";
 import { SiGithub } from "react-icons/si";
 import { IoRocketOutline } from "react-icons/io5";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Projects({ pinnedItems }) {
   return (
