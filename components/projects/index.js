@@ -1,3 +1,3 @@
-import Projects from "./Projects";
+import Projects from "./projects";
 
 export default Projects;
