@@ -1,6 +1,4 @@
 import { useRouter } from "next/router";
-import { GoRepo } from "react-icons/go";
-import { FaHome } from "react-icons/fa";
 
 export default function Header() {
   const router = useRouter();

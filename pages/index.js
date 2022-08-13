@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from "next/router";
-
 import {
   ApolloClient,
   InMemoryCache,
@@ -22,8 +20,6 @@ import Frameworks from "../utils/frameworks";
 import Tools from "../utils/tools";
 
 export default function Home({ pinnedItems }) {
-  const router = useRouter();
-
   return (
     <div className="bg-zinc-900 min-h-screen">
       <Head>
