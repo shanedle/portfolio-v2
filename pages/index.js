@@ -33,7 +33,9 @@ export default function Home({ pinnedItems }) {
       <div className="mt-12 rounded-lg grid-cols-1 max-w-xs sm:max-w-md md:pt-8 md:max-w-2xl xl:max-w-6xl mx-auto">
         <div className="flex flex-col space-y-4  font-semibold text-center">
           {/* Hero Heading Text*/}
-          <h1 className="text-2xl md:text-4xl text-rose-600">Hallo!</h1>
+          <h1 className="text-3xl md:text-6xl text-rose-600">
+            Hallo, I’m Shane!
+          </h1>
           {/* Hero Social Media Buttons */}
           <div className="flex items-center justify-center space-x-6">
             {Socials?.map((social) => (
@@ -42,7 +44,7 @@ export default function Home({ pinnedItems }) {
                 className="text-rose-600 hover:text-rose-800"
               >
                 <Link href={social.path} passHref>
-                  <a className="text-3xl md:text-5xl" target="_blank">
+                  <a className="text-3xl md:text-4xl" target="_blank">
                     {social.icon}
                   </a>
                 </Link>
@@ -51,7 +53,7 @@ export default function Home({ pinnedItems }) {
           </div>
           {/* Hero Paragraph Text */}
           <p className="text-lg md:text-xl text-white">
-            I’m Shane, a Front End Developer based in a small-town in Norway.
+            Front End Developer based in a small-town in Norway.
           </p>
         </div>
       </div>
