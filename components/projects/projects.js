@@ -9,9 +9,9 @@ export default function Projects({ pinnedItems }) {
         {pinnedItems?.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col justify-between max-w-xs md:max-w-md border-2 border-rose-200 text-white bg-zinc-900 rounded-lg"
+            className="flex flex-col justify-between max-w-xs md:max-w-md border-2 border-rose-300 text-white rounded-lg"
           >
-            <h1 className="text-center text-xl font-semibold p-2 mb-3 rounded-t-lg bg-zinc-800">
+            <h1 className="text-center text-xl font-semibold p-2 mb-3 rounded-t-lg">
               {item.name}
             </h1>
             <p className="py-2 mx-5">{item.description}</p>
@@ -27,10 +27,10 @@ export default function Projects({ pinnedItems }) {
               ))}
             </div>
             {/* Links */}
-            <div className="flex justify-between rounded-b-lg bg-zinc-800 p-2 px-5">
+            <div className="flex justify-between rounded-b-lg p-2 px-5">
               <Link href={item.url} passHref>
                 <a
-                  className="flex items-center  bg-zinc-400 text-zinc-800 hover:text-rose-900 rounded-full px-3 py-1 text-xl font-semibold m-1"
+                  className="flex items-center bg-rose-600 text-white hover:bg-rose-800 rounded-full px-3 py-1 text-xl font-semibold m-1"
                   target="_blank"
                 >
                   <SiGithub />
@@ -40,7 +40,7 @@ export default function Projects({ pinnedItems }) {
               {item.homepageUrl ? (
                 <Link href={item.homepageUrl} passHref>
                   <a
-                    className="flex items-center  bg-zinc-400 text-zinc-800 hover:text-rose-900 rounded-full px-3 py-1 text-xl font-semibold m-1"
+                    className="flex items-center bg-rose-600 text-white hover:bg-rose-800 rounded-full px-3 py-1 text-xl font-semibold m-1"
                     target="_blank"
                   >
                     <IoRocketOutline />
@@ -48,7 +48,7 @@ export default function Projects({ pinnedItems }) {
                   </a>
                 </Link>
               ) : (
-                <p className="bg-zinc-400 text-zinc-800 hover:text-rose-900 rounded-full px-3 py-1 text-sm font-bold m-1">
+                <p className="bg-rose-600 text-white hover:bg-rose-800 rounded-full px-3 py-1 text-xl font-semibold m-1">
                   WIP
                 </p>
               )}
