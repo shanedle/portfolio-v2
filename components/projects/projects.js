@@ -11,7 +11,7 @@ export default function Projects({ pinnedItems }) {
             key={item.id}
             className="flex flex-col justify-between max-w-xs md:max-w-md border-2 border-rose-300 text-white rounded-lg"
           >
-            <h1 className="text-center text-xl font-semibold p-2 mb-3 rounded-t-lg">
+            <h1 className="text-rose-300 text-center text-xl font-semibold p-2 mb-3 rounded-t-lg">
               {item.name}
             </h1>
             <p className="py-2 mx-5">{item.description}</p>
@@ -19,7 +19,7 @@ export default function Projects({ pinnedItems }) {
             <div className="mx-5 pb-2 flex flex-wrap justify-center">
               {item.repositoryTopics.edges?.map((tag) => (
                 <span
-                  className="cursor-pointer inline-block bg-rose-700 text-rose-100 rounded-full px-3 py-1 text-xs font-semibold m-1"
+                  className="cursor-pointer inline-block bg-rose-700 rounded-full px-3 py-1 text-xs font-semibold m-1"
                   key={tag.node.id}
                 >
                   {tag.node.topic.name}
