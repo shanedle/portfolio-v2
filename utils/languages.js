@@ -2,6 +2,7 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiTypescript,
   SiGraphql,
   SiPhp,
 } from "react-icons/si";
@@ -24,11 +25,16 @@ const Languages = [
   },
   {
     id: 4,
+    name: "TypeScript",
+    icon: <SiTypescript />,
+  },
+  {
+    id: 5,
     name: "GraphQL",
     icon: <SiGraphql />,
   },
   {
-    id: 5,
+    id: 6,
     name: "PHP",
     icon: <SiPhp />,
   },
