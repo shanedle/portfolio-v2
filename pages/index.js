@@ -53,8 +53,9 @@ export default function Home({ pinnedItems }) {
           </div>
           {/* Hero Paragraph Text */}
           <p className="text-lg md:text-xl text-white">
-            I&apos;m a Front-end Developer who loves to build beautiful and
-            user-friendly web applications.
+            {
+              "I'm a Front-end Developer who loves to build beautiful and user-friendly web applications."
+            }
           </p>
         </div>
       </div>
