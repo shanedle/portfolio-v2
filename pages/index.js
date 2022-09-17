@@ -59,15 +59,13 @@ export default function Home({ pinnedItems }) {
           </p>
         </div>
       </div>
-      {/* Skills & Tools Section */}
+      {/* Technical Skills Section */}
       <h1 className="text-rose-600 text-center font-semibold text-2xl pt-6 sm:pt-12">
-        Skills & Tools
+        Technical Skills
       </h1>
       <div className="sm:grid grid-cols-3 gap-4 md:max-w-4xl lg:max-w-7xl pt-3 pb-12  mx-auto">
         <section className="container flex flex-col items-center">
-          <h2 className="text-white text-center py-4 sm:py-8">
-            Programing Languages
-          </h2>
+          <h2 className="text-white text-center py-4 sm:py-8">Languages</h2>
           <div className="grid grid-cols-4 gap-4 md:grid-cols-3">
             {Languages?.map((language) => (
               <SkillTemplate
