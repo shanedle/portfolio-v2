@@ -5,15 +5,11 @@ My 2nd portfolio website, designed and built with Next.js, GraphQL and Tailwind 
 **Install dependencies**
 ```bash
 npm install
-# or
-yarn
 ```
 
 **Run development server**
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 ## Packages
