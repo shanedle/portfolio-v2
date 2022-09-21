@@ -7,6 +7,7 @@ import {
   gql,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import ReactTypingEffect from "react-typing-effect";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -34,8 +35,21 @@ export default function Home({ pinnedItems }) {
         <div className="flex flex-col space-y-4  font-semibold text-center">
           {/* Hero Heading Text*/}
           <h1 className="text-3xl md:text-6xl text-rose-600">
-            Hallo, I’m Shane!
+            Hallo! 👋 I’m Shane!
           </h1>
+          <h2 className="text-3xl md:text-4xl text-mid text-white">
+            <ReactTypingEffect
+              typingDelay={200}
+              speed={30}
+              eraseSpeed={30}
+              eraseDelay={1500}
+              text={[`Frontend Developer`, `Gym-goer`, `Cat Lover`]}
+            />
+          </h2>
+          {/* Hero Paragraph Text */}
+          <p className="text-lg md:text-xl text-white">
+            I love to design and build beautiful user-friendly web applications.
+          </p>
           {/* Hero Social Media Buttons */}
           <div className="flex items-center justify-center space-x-6">
             {Socials?.map((social) => (
@@ -51,12 +65,6 @@ export default function Home({ pinnedItems }) {
               </div>
             ))}
           </div>
-          {/* Hero Paragraph Text */}
-          <p className="text-lg md:text-xl text-white">
-            {
-              "I'm a Front-end Developer who loves to design and build beautiful user-friendly web applications."
-            }
-          </p>
         </div>
       </div>
       {/* Technical Skills Section */}
