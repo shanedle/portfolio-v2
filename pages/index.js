@@ -35,7 +35,7 @@ export default function Home({ pinnedItems }) {
         <div className="flex flex-col space-y-4  font-semibold text-center">
           {/* Hero Heading Text*/}
           <h1 className="text-3xl md:text-6xl text-rose-600">
-            Hallo! 👋 I’m Shane!
+            Hallo, I’m Shane! 👋
           </h1>
           <h2 className="text-3xl md:text-4xl text-mid text-white">
             <ReactTypingEffect
