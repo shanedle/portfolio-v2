@@ -11,7 +11,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
-import SkillTemplate from "../components/skillTemplate";
+import SkillTemplate from "../components/skilltemplate";
 import Projects from "../components/projects";
 
 import Socials from "../utils/socials";
