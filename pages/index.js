@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import {
   ApolloClient,
   InMemoryCache,
@@ -14,7 +13,6 @@ import Footer from "../components/footer";
 import SkillTemplate from "../components/skilltemplate";
 import Projects from "../components/projects";
 
-import Socials from "../utils/socials";
 import Languages from "../utils/languages";
 import Libraries from "../utils/libraries";
 import Frameworks from "../utils/frameworks";
@@ -50,21 +48,6 @@ export default function Home({ pinnedItems }) {
           <p className="text-lg md:text-xl text-white">
             I love to design and build beautiful user-friendly web applications.
           </p>
-          {/* Hero Social Media Buttons */}
-          <div className="flex items-center justify-center space-x-6">
-            {Socials?.map((social) => (
-              <div
-                key={social.id}
-                className="text-rose-600 hover:text-rose-800"
-              >
-                <Link href={social.path} passHref>
-                  <a className="text-3xl md:text-4xl" target="_blank">
-                    {social.icon}
-                  </a>
-                </Link>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
       {/* Technical Skills Section */}

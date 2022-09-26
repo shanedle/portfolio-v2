@@ -1,4 +1,7 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
+
+import Socials from "../../utils/socials";
 
 export default function Header() {
   const router = useRouter();
@@ -16,7 +19,20 @@ export default function Header() {
 
         {/* Right */}
         <div className="flex space-x-8 px-3 md:px-0 text-zinc-400">
-          {/* TODO: Add Dark/Light mode here */}
+          <div className="flex items-center justify-center space-x-4 py-2">
+            {Socials?.map((social) => (
+              <div
+                key={social.id}
+                className="text-rose-600 hover:text-rose-800"
+              >
+                <Link href={social.path} passHref>
+                  <a className="text-2xl" target="_blank">
+                    {social.icon}
+                  </a>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
