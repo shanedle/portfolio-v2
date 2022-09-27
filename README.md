@@ -14,5 +14,5 @@ npm run dev
 
 ## Packages
 - [Next.js](https://nextjs.org/docs)
-- [GraphQL](https://www.apollographql.com/docs)
+- [Apollo GraphQL](https://www.apollographql.com/docs)
 - [Tailwind CSS](https://tailwindcss.com/docs)
