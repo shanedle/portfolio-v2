@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Socials from "../../utils/socials";
+import Socials from "@/utils/socials";
 
 export default function Header() {
   const router = useRouter();
