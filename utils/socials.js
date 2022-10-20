@@ -1,6 +1,6 @@
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
 
-const Socials = [
+export const Socials = [
   {
     id: 1,
     name: "Github",
@@ -20,5 +20,3 @@ const Socials = [
     icon: <SiGmail />,
   },
 ];
-
-export default Socials;

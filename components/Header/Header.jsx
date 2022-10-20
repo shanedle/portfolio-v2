@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Socials from "@/utils/socials";
 
-export default function Header() {
+export const Header = () => {
   const router = useRouter();
 
   return (
@@ -37,4 +37,4 @@ export default function Header() {
       </div>
     </div>
   );
-}
+};

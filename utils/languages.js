@@ -7,7 +7,7 @@ import {
   SiPhp,
 } from "react-icons/si";
 
-const Languages = [
+export const Languages = [
   {
     id: 1,
     name: "HTML5",
@@ -39,5 +39,3 @@ const Languages = [
     icon: <SiPhp />,
   },
 ];
-
-export default Languages;

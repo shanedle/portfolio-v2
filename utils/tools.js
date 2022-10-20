@@ -7,7 +7,7 @@ import {
   SiHeroku,
 } from "react-icons/si";
 
-const Tools = [
+export const Tools = [
   {
     id: 1,
     name: "Visual Studio Code",
@@ -39,5 +39,3 @@ const Tools = [
     icon: <SiHeroku />,
   },
 ];
-
-export default Tools;

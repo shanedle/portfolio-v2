@@ -8,15 +8,15 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import ReactTypingEffect from "react-typing-effect";
 
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import SkillTemplate from "@/components/skilltemplate";
-import Projects from "@/components/projects";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { SkillTemplate } from "@/components/skilltemplate";
+import { Projects } from "@/components/projects";
 
-import Languages from "@/utils/languages";
-import Libraries from "@/utils/libraries";
-import Frameworks from "@/utils/frameworks";
-import Tools from "@/utils/tools";
+import { Languages } from "@/utils/languages";
+import { Libraries } from "@/utils/libraries";
+import { Frameworks } from "@/utils/frameworks";
+import { Tools } from "@/utils/tools";
 
 export default function Home({ pinnedItems }) {
   return (

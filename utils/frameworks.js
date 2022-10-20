@@ -9,7 +9,7 @@ import {
   SiMaterialui,
 } from "react-icons/si";
 
-const Frameworks = [
+export const Frameworks = [
   {
     id: 1,
     name: "Express.js",
@@ -51,5 +51,3 @@ const Frameworks = [
     icon: <SiMaterialui />,
   },
 ];
-
-export default Frameworks;

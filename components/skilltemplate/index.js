@@ -1,3 +1,1 @@
-import SkillTemplate from "./skilltemplate";
-
-export default SkillTemplate;
+export { SkillTemplate } from "./SkillTemplate";

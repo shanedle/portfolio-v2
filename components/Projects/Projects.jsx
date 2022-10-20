@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { IoRocketOutline } from "react-icons/io5";
 
-export default function Projects({ pinnedItems }) {
+export const Projects = ({ pinnedItems }) => {
   return (
     <section className="flex justify-center">
       <div className="grid md:grid-cols-3 gap-8 m-4 p-3 pb-10">
@@ -58,4 +58,4 @@ export default function Projects({ pinnedItems }) {
       </div>
     </section>
   );
-}
+};

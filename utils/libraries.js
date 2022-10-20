@@ -1,6 +1,6 @@
 import { SiReact, SiRedux, SiJquery } from "react-icons/si";
 
-const Libraries = [
+export const Libraries = [
   {
     id: 1,
     name: "React",
@@ -17,5 +17,3 @@ const Libraries = [
     icon: <SiJquery />,
   },
 ];
-
-export default Libraries;
