@@ -11,9 +11,9 @@ export const Projects = ({ pinnedItems }) => {
             key={item.id}
             className="flex flex-col justify-between max-w-xs md:max-w-md border-2 border-rose-300 text-white rounded-lg"
           >
-            <h1 className="text-rose-300 text-center text-xl font-semibold p-2 mb-3 rounded-t-lg">
+            <h2 className="text-rose-300 text-center text-xl font-semibold p-2 mb-3 rounded-t-lg">
               {item.name}
-            </h1>
+            </h2>
             <p className="py-2 mx-5">{item.description}</p>
             {/* Tags */}
             <div className="mx-5 pb-2 flex flex-wrap justify-center">

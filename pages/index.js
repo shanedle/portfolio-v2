@@ -32,7 +32,7 @@ export default function Home({ pinnedItems }) {
       <div className="mt-12 rounded-lg grid-cols-1 max-w-xs sm:max-w-md md:pt-8 md:max-w-2xl xl:max-w-6xl mx-auto">
         <div className="flex flex-col space-y-4  font-semibold text-center">
           {/* Hero Heading Text*/}
-          <h1 className="text-3xl md:text-6xl text-rose-600">
+          <h1 className="text-3xl md:text-5xl text-rose-600">
             Hallo, I’m Shane! 👋
           </h1>
           <h2 className="text-3xl md:text-4xl text-mid text-white">
@@ -51,9 +51,9 @@ export default function Home({ pinnedItems }) {
         </div>
       </div>
       {/* Technical Skills Section */}
-      <h1 className="text-rose-600 text-center font-semibold text-2xl pt-6 sm:pt-12">
+      <h2 className="text-rose-600 text-center font-semibold text-2xl pt-6 sm:pt-12">
         Technical Skills
-      </h1>
+      </h2>
       <div className="sm:grid grid-cols-3 gap-4 md:max-w-4xl lg:max-w-7xl pt-3 pb-12  mx-auto">
         <section className="container flex flex-col items-center">
           <h2 className="text-white text-center py-4 sm:py-8">Languages</h2>
@@ -106,9 +106,9 @@ export default function Home({ pinnedItems }) {
         </section>
       </div>
       {/* Projects Section */}
-      <h1 className="text-rose-600 text-center font-semibold text-2xl pt-6 sm:pt-12">
+      <h2 className="text-rose-600 text-center font-semibold text-2xl pt-6 sm:pt-12">
         Projects
-      </h1>
+      </h2>
       <Projects pinnedItems={pinnedItems} />
       {/* Footer */}
       <Footer />

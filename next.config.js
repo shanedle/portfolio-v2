@@ -1,4 +1,3 @@
-//
 module.exports = {
   reactStrictMode: true,
   images: {
@@ -6,5 +5,9 @@ module.exports = {
       "repository-images.githubusercontent.com",
       "avatars.githubusercontent.com",
     ],
+  },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
   },
 };
