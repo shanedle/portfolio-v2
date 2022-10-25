@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* CARD */
+  .card {
+    @apply flex flex-col justify-between max-w-xs md:max-w-md border-2 border-rose-300 text-white rounded-lg;
+  }
+  .card-title {
+    @apply text-rose-300 text-center text-xl font-semibold p-2 mb-3 rounded-t-lg;
+  }
+  .card-tags-wrapper {
+    @apply mx-5 pb-2 flex flex-wrap justify-center;
+  }
+  .card-tags {
+    @apply cursor-pointer inline-block bg-rose-700 rounded-full px-3 py-1 text-xs font-semibold m-1;
+  }
+  .card-links-wrapper {
+    @apply flex justify-between rounded-b-lg p-2 px-5;
+  }
+  .card-links {
+    @apply flex items-center bg-rose-600 text-white hover:bg-rose-800 rounded-full px-3 py-1 text-lg font-semibold m-1;
+  }
+}
