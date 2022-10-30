@@ -41,7 +41,7 @@ export const Tools = [
   },
   {
     id: 7,
-    name: "Heroku",
-    icon: <SiHeroku />,
+    name: "MySQL",
+    icon: <SiMysql />,
   },
 ];
