@@ -1,0 +1,1 @@
+export { SkillTemplate } from "./skilltemplate";
