@@ -1,7 +1,6 @@
 import {
   SiExpress,
   SiNextdotjs,
-  SiVuedotjs,
   SiNuxtdotjs,
   SiTailwindcss,
   SiChakraui,
@@ -20,34 +19,30 @@ export const Frameworks = [
     name: "Next.js",
     icon: <SiNextdotjs />,
   },
+
   {
     id: 3,
-    name: "Vue.js",
-    icon: <SiVuedotjs />,
-  },
-  {
-    id: 4,
     name: "Nuxt.js",
     icon: <SiNuxtdotjs />,
   },
   {
-    id: 5,
+    id: 4,
     name: "Tailwind CSS",
     icon: <SiTailwindcss />,
   },
   {
-    id: 6,
-    name: "Chakra",
-    icon: <SiChakraui />,
-  },
-  {
-    id: 7,
+    id: 5,
     name: "Bootstrap",
     icon: <SiBootstrap />,
   },
   {
-    id: 8,
+    id: 6,
     name: "Material UI",
     icon: <SiMaterialui />,
+  },
+  {
+    id: 7,
+    name: "Chakra",
+    icon: <SiChakraui />,
   },
 ];

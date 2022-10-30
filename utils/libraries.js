@@ -1,4 +1,4 @@
-import { SiReact, SiRedux, SiJquery } from "react-icons/si";
+import { SiReact, SiRedux, SiVuedotjs, SiJquery } from "react-icons/si";
 
 export const Libraries = [
   {
@@ -13,6 +13,11 @@ export const Libraries = [
   },
   {
     id: 3,
+    name: "Vue.js",
+    icon: <SiVuedotjs />,
+  },
+  {
+    id: 4,
     name: "jQuery",
     icon: <SiJquery />,
   },

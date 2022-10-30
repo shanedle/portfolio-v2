@@ -30,12 +30,12 @@ export const Languages = [
   },
   {
     id: 5,
-    name: "GraphQL",
-    icon: <SiGraphql />,
+    name: "PHP",
+    icon: <SiPhp />,
   },
   {
     id: 6,
-    name: "PHP",
-    icon: <SiPhp />,
+    name: "GraphQL",
+    icon: <SiGraphql />,
   },
 ];

@@ -5,6 +5,7 @@ import {
   SiFirebase,
   SiVercel,
   SiHeroku,
+  SiMysql,
 } from "react-icons/si";
 
 export const Tools = [
@@ -35,6 +36,11 @@ export const Tools = [
   },
   {
     id: 6,
+    name: "Heroku",
+    icon: <SiHeroku />,
+  },
+  {
+    id: 7,
     name: "Heroku",
     icon: <SiHeroku />,
   },
