@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Socials from "@/utils/socials";
+import Socials from "@/data/socials";
 
 export const Header = () => {
   const router = useRouter();

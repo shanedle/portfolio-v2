@@ -13,10 +13,10 @@ import { Footer } from "@/components/footer";
 import { SkillTemplate } from "@/components/skilltemplate";
 import { Projects } from "@/components/projects";
 
-import { Languages } from "@/utils/languages";
-import { Libraries } from "@/utils/libraries";
-import { Frameworks } from "@/utils/frameworks";
-import { Tools } from "@/utils/tools";
+import { Languages } from "@/data/languages";
+import { Libraries } from "@/data/libraries";
+import { Frameworks } from "@/data/frameworks";
+import { Tools } from "@/data/tools";
 
 export default function Home({ pinnedItems }) {
   return (
