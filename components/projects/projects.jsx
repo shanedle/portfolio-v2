@@ -23,14 +23,14 @@ export const Projects = ({ pinnedItems }) => {
               <Link href={item.url} passHref>
                 <a className="card-links" target="_blank">
                   <SiGithub />
-                  <span className="ml-2 hidden md:block">Source Code</span>
+                  <span className="text-md md:text-lg ml-2">GitHub</span>
                 </a>
               </Link>
               {item.homepageUrl ? (
                 <Link href={item.homepageUrl} passHref>
                   <a className="card-links" target="_blank">
                     <IoRocketOutline />
-                    <span className="ml-2 hidden md:block"> Live Demo</span>
+                    <span className="text-md md:text-lg ml-2">Demo</span>
                   </a>
                 </Link>
               ) : (
