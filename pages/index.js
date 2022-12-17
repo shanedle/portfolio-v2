@@ -41,7 +41,7 @@ export default function Home({ pinnedItems }) {
               speed={30}
               eraseSpeed={30}
               eraseDelay={1500}
-              text={[`Frontend Developer`, `Gym-goer`, `Learn`, `Cat Lover`]}
+              text={[`Frontend Developer`, `Gym-goer`, `Learner`, `Cat Lover`]}
             />
           </h2>
           {/* Hero Paragraph Text */}
