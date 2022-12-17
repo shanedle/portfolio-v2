@@ -41,12 +41,13 @@ export default function Home({ pinnedItems }) {
               speed={30}
               eraseSpeed={30}
               eraseDelay={1500}
-              text={[`Frontend Developer`, `Gym-goer`, `Cat Lover`]}
+              text={[`Frontend Developer`, `Gym-goer`, `Learn`, `Cat Lover`]}
             />
           </h2>
           {/* Hero Paragraph Text */}
           <p className="text-lg md:text-xl text-white">
-            I love to design and build beautiful user-friendly web applications.
+            I love to design and build beautiful user-friendly websites and web
+            applications.
           </p>
         </div>
       </div>
