@@ -5,6 +5,7 @@ import {
   SiTypescript,
   SiGraphql,
   SiPhp,
+  SiCsharp,
 } from "react-icons/si";
 
 export const Languages = [
@@ -37,5 +38,10 @@ export const Languages = [
     id: 6,
     name: "GraphQL",
     icon: <SiGraphql />,
+  },
+  {
+    id: 7,
+    name: "C#",
+    icon: <SiCsharp />,
   },
 ];

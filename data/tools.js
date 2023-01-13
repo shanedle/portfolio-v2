@@ -1,18 +1,19 @@
 import {
-  SiVisualstudiocode,
+  SiDotnet,
   SiFigma,
   SiGit,
   SiFirebase,
   SiVercel,
   SiHeroku,
   SiMysql,
+  SiPostgresql,
 } from "react-icons/si";
 
 export const Tools = [
   {
     id: 1,
-    name: "Visual Studio Code",
-    icon: <SiVisualstudiocode />,
+    name: ".NET",
+    icon: <SiDotnet />,
   },
   {
     id: 2,
@@ -43,5 +44,10 @@ export const Tools = [
     id: 7,
     name: "MySQL",
     icon: <SiMysql />,
+  },
+  {
+    id: 8,
+    name: "PostgresSQL",
+    icon: <SiPostgresql />,
   },
 ];

@@ -35,14 +35,4 @@ export const Frameworks = [
     name: "Bootstrap",
     icon: <SiBootstrap />,
   },
-  {
-    id: 6,
-    name: "Material UI",
-    icon: <SiMaterialui />,
-  },
-  {
-    id: 7,
-    name: "Chakra",
-    icon: <SiChakraui />,
-  },
 ];
