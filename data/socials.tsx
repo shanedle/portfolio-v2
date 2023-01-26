@@ -1,6 +1,13 @@
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
 
-export const Socials = [
+interface Social {
+  id: number;
+  name: string;
+  path: string;
+  icon: JSX.Element;
+}
+
+export const Socials: Social[] = [
   {
     id: 1,
     name: "Github",

@@ -9,7 +9,13 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 
-export const Tools = [
+interface Tool {
+  id: number;
+  name: string;
+  icon: JSX.Element;
+}
+
+export const Tools: Tool[] = [
   {
     id: 1,
     name: ".NET",

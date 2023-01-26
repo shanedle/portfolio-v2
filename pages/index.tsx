@@ -18,7 +18,11 @@ import { Libraries } from "@/data/libraries";
 import { Frameworks } from "@/data/frameworks";
 import { Tools } from "@/data/tools";
 
-export default function Home({ pinnedItems }) {
+interface HomeProps {
+  pinnedItems: any[];
+}
+
+export default function Home({ pinnedItems }: HomeProps) {
   return (
     <div className="bg-zinc-900 min-h-screen">
       <Head>
@@ -64,6 +68,7 @@ export default function Home({ pinnedItems }) {
                 key={language.id}
                 icon={language.icon}
                 skillName={language.name}
+                id={0}
               />
             ))}
           </div>
@@ -79,6 +84,7 @@ export default function Home({ pinnedItems }) {
                 key={library.id}
                 icon={library.icon}
                 skillName={library.name}
+                id={library.id}
               />
             ))}
             {Frameworks?.map((framework) => (
@@ -86,6 +92,7 @@ export default function Home({ pinnedItems }) {
                 key={framework.id}
                 icon={framework.icon}
                 skillName={framework.name}
+                id={framework.id}
               />
             ))}
           </div>
@@ -101,6 +108,7 @@ export default function Home({ pinnedItems }) {
                 key={tool.id}
                 icon={tool.icon}
                 skillName={tool.name}
+                id={tool.id}
               />
             ))}
           </div>

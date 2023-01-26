@@ -1,6 +1,12 @@
 import { SiReact, SiRedux, SiVuedotjs, SiJquery } from "react-icons/si";
 
-export const Libraries = [
+interface Library {
+  id: number;
+  name: string;
+  icon: JSX.Element;
+}
+
+export const Libraries: Library[] = [
   {
     id: 1,
     name: "React",

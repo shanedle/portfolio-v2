@@ -8,7 +8,13 @@ import {
   SiCsharp,
 } from "react-icons/si";
 
-export const Languages = [
+interface Language {
+  id: number;
+  name: string;
+  icon: JSX.Element;
+}
+
+export const Languages: Language[] = [
   {
     id: 1,
     name: "HTML5",

@@ -3,12 +3,16 @@ import {
   SiNextdotjs,
   SiNuxtdotjs,
   SiTailwindcss,
-  SiChakraui,
   SiBootstrap,
-  SiMaterialui,
 } from "react-icons/si";
 
-export const Frameworks = [
+interface Framework {
+  id: number;
+  name: string;
+  icon: JSX.Element;
+}
+
+export const Frameworks: Framework[] = [
   {
     id: 1,
     name: "Express.js",
