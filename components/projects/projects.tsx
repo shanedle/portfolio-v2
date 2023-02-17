@@ -26,8 +26,8 @@ interface Props {
 
 export const Projects = ({ pinnedItems }: Props) => {
   return (
-    <section className="flex justify-center">
-      <div className="grid md:grid-cols-3 gap-8 m-4 p-3 pb-10">
+    <section className="flex justify-between md:max-w-screen-md xl:max-w-screen-xl mx-auto">
+      <div className="grid gap-8 m-4 p-3 pb-10 md:grid-cols-2 lg:grid-cols-3">
         {pinnedItems?.map((item) => (
           <div key={item.id} className="card">
             <h2 className="card-title">{item.name}</h2>

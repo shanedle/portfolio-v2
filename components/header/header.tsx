@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <div className="py-3 bg-zinc-900 bg-opacity-50 sticky top-0 z-50 ">
       {/* Left */}
-      <div className="flex justify-between md:max-w-4xl xl:max-w-6xl mx-auto">
+      <div className="flex justify-between md:max-w-screen-md xl:max-w-screen-xl mx-auto">
         <div
           className="px-3 md:px-0 text-white font-semibold text-lg cursor-pointer"
           onClick={() => router.push("/")}
