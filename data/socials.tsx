@@ -1,4 +1,4 @@
-import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 interface Social {
   id: number;
@@ -19,11 +19,5 @@ export const Socials: Social[] = [
     name: "LinkedIn",
     path: "https://www.linkedin.com/in/shane-anh-dagatan-le",
     icon: <SiLinkedin />,
-  },
-  {
-    id: 3,
-    name: "Mail",
-    path: "mailto:shane.anh.d.le@gmail.com",
-    icon: <SiGmail />,
   },
 ];

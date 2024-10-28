@@ -6,36 +6,29 @@ import {
   SiBootstrap,
 } from "react-icons/si";
 
-interface Framework {
-  id: number;
-  name: string;
-  icon: JSX.Element;
-}
-
-export const Frameworks: Framework[] = [
+export const Frameworks = [
   {
-    id: 1,
+    id: "frame_1",
     name: "Express.js",
     icon: <SiExpress />,
   },
   {
-    id: 2,
+    id: "frame_2",
     name: "Next.js",
     icon: <SiNextdotjs />,
   },
-
   {
-    id: 3,
+    id: "frame_3",
     name: "Nuxt.js",
     icon: <SiNuxtdotjs />,
   },
   {
-    id: 4,
+    id: "frame_4",
     name: "Tailwind CSS",
     icon: <SiTailwindcss />,
   },
   {
-    id: 5,
+    id: "frame_5",
     name: "Bootstrap",
     icon: <SiBootstrap />,
   },

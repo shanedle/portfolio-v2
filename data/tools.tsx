@@ -9,51 +9,45 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 
-interface Tool {
-  id: number;
-  name: string;
-  icon: JSX.Element;
-}
-
-export const Tools: Tool[] = [
+export const Tools = [
   {
-    id: 1,
+    id: "tool_1",
     name: ".NET",
     icon: <SiDotnet />,
   },
   {
-    id: 2,
+    id: "tool_2",
     name: "Git",
     icon: <SiGit />,
   },
   {
-    id: 3,
+    id: "tool_3",
     name: "Figma",
     icon: <SiFigma />,
   },
   {
-    id: 4,
+    id: "tool_4",
     name: "Firebase",
     icon: <SiFirebase />,
   },
   {
-    id: 5,
+    id: "tool_5",
     name: "Vercel",
     icon: <SiVercel />,
   },
   {
-    id: 6,
+    id: "tool_6",
     name: "Heroku",
     icon: <SiHeroku />,
   },
   {
-    id: 7,
+    id: "tool_7",
     name: "MySQL",
     icon: <SiMysql />,
   },
   {
-    id: 8,
-    name: "PostgresSQL",
+    id: "tool_8",
+    name: "PostgreSQL",
     icon: <SiPostgresql />,
   },
 ];
