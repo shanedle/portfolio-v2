@@ -55,6 +55,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Create a `.env.local` file in the root directory:
 
 ```
-NEXT_PUBLIC_GITHUB_TOKEN=your_NEXT_PUBLIC_GITHUB_TOKEN
+NEXT_PUBLIC_GITHUB_TOKEN=your_github_token
 NEXT_PUBLIC_GITHUB_USERNAME=your_username_token
 ```
