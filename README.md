@@ -1,16 +1,60 @@
-# Portfolio Website v2
-Welcome to my portfolio website v2! This website showcases my latest work and projects. Built with Next.js, GraphQL, and Tailwind CSS, this project is an excellent example of my skills in web development.
+# Portfolio Website Version 2
 
-## Summary
-This project is my second portfolio website, which I designed and built to showcase my web development skills. The website is built with Next.js, a React framework that offers excellent performance and developer experience. GraphQL was used to fetch my GitHub repositories and display them on the website. Tailwind CSS was used for styling.
+A modern and performant portfolio website built with the latest web technologies to showcase my projects and skills.
 
-## Installation
-1. Clone the repository to your local machine using git clone https://github.com/shanedle/portfolio-v2.git
-2. Install dependencies by running `yarn`
-3. Start the development server with `yarn dev`
-4. Open `http://localhost:3000` in your browser
+## 🚀 Tech Stack
 
-## Packages
-- [Next.js:](https://nextjs.org/docs) A React framework for building server-side rendering and static web applications.
-- [Apollo GraphQL:](https://www.apollographql.com/docs) A GraphQL implementation that simplifies the data layer of web applications.
-- [Tailwind CSS:](https://tailwindcss.com/docs) A utility-first CSS framework that helps you build responsive and customizable user interfaces.
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Additional Features**: GraphQL for GitHub repository integration
+
+## 📋 Features
+
+- Modern and responsive design
+- Dark/Light mode support
+- Server-side rendering
+- GitHub repository integration
+- Type-safe development
+- Reusable UI components
+
+## 🛠️ Installation
+
+First, clone the repository:
+
+```bash
+git clone https://github.com/shanedle/portfolio-v2.git
+cd portfolio-v2
+```
+
+Then, install dependencies using your preferred package manager:
+
+```bash
+# npm
+npm install
+npm run dev
+
+# yarn
+yarn install
+yarn dev
+
+# pnpm
+pnpm install
+pnpm dev
+
+# bun
+bun install
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🔧 Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```
+NEXT_PUBLIC_GITHUB_TOKEN=your_NEXT_PUBLIC_GITHUB_TOKEN
+NEXT_PUBLIC_GITHUB_USERNAME=your_username_token
+```
