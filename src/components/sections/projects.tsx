@@ -101,8 +101,9 @@ const Projects = () => {
           Featured Work
         </h1>
         <p className="mx-auto my-2.5 max-w-prose px-4 text-center text-sm text-zinc-500 sm:text-base">
-          From dynamic e-commerce platforms to lightning-fast web apps,
-          here&apos;s a glimpse of the solutions I&apos;ve brought to life.
+          Welcome to my coding playground - a collection of passion projects and
+          experimental solutions I&apos;ve built while exploring new
+          technologies.
         </p>
       </BlurFade>
       <div className="mx-auto my-5 grid grid-cols-1 gap-4 lg:grid-cols-2">
