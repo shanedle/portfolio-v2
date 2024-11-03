@@ -1,13 +1,13 @@
 import "./globals.css";
 
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Dancing_Script } from "next/font/google";
 
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar from "@/components/ui/navbar";
 import { constructMetadata } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
-const playfair = Playfair_Display({ subsets: ["latin"] });
+const dancing = Dancing_Script({ subsets: ["latin"] });
 
 export const metadata = constructMetadata();
 

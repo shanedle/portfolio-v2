@@ -3,12 +3,18 @@
 import Link from "next/link";
 import { Github, Linkedin, Mail } from "lucide-react";
 import {
-  SiNextdotjs,
+  SiReact,
   SiTypescript,
   SiExpress,
   SiMongodb,
   SiDotnet,
-  SiTailwindcss,
+  SiCsharp,
+  SiCss3,
+  SiHtml5,
+  SiCypress,
+  SiJest,
+  SiVuedotjs,
+  SiFirebase,
 } from "react-icons/si";
 
 import OrbitingCircles from "@/components/ui/orbiting-circles";
@@ -44,11 +50,12 @@ const SOCIAL_MEDIA_HANDLES = [
 ];
 
 const TECH_STACK = [
+  // Inner circle
   {
-    icon: SiNextdotjs,
+    icon: SiReact,
     duration: 20,
     delay: 0,
-    radius: 50, // Inner circle
+    radius: 50,
     reverse: false,
     size: "h-[22px] w-[22px]",
   },
@@ -56,39 +63,89 @@ const TECH_STACK = [
     icon: SiTypescript,
     duration: 20,
     delay: 10,
-    radius: 50, // Inner circle
+    radius: 50,
     reverse: true,
     size: "h-[22px] w-[22px]",
   },
+  // Middle circle
   {
     icon: SiExpress,
     duration: 25,
     delay: 0,
-    radius: 90, // Middle circle
+    radius: 90,
     reverse: false,
     size: "h-[26px] w-[26px]",
   },
   {
     icon: SiMongodb,
     duration: 25,
-    delay: 12,
-    radius: 90, // Middle circle
+    delay: 6,
+    radius: 90,
     reverse: true,
     size: "h-[26px] w-[26px]",
   },
   {
+    icon: SiCss3,
+    duration: 25,
+    delay: 12,
+    radius: 90,
+    reverse: false,
+    size: "h-[26px] w-[26px]",
+  },
+  {
+    icon: SiHtml5,
+    duration: 25,
+    delay: 18,
+    radius: 90,
+    reverse: true,
+    size: "h-[26px] w-[26px]",
+  },
+  // Outer circle
+  {
     icon: SiDotnet,
     duration: 30,
     delay: 0,
-    radius: 130, // Outer circle
+    radius: 130,
     reverse: false,
     size: "h-[30px] w-[30px]",
   },
   {
-    icon: SiTailwindcss,
+    icon: SiCsharp,
+    duration: 30,
+    delay: 5,
+    radius: 130,
+    reverse: true,
+    size: "h-[30px] w-[30px]",
+  },
+  {
+    icon: SiCypress,
+    duration: 30,
+    delay: 10,
+    radius: 130,
+    reverse: false,
+    size: "h-[30px] w-[30px]",
+  },
+  {
+    icon: SiJest,
     duration: 30,
     delay: 15,
-    radius: 130, // Outer circle
+    radius: 130,
+    reverse: true,
+    size: "h-[30px] w-[30px]",
+  },
+  {
+    icon: SiVuedotjs,
+    duration: 30,
+    delay: 20,
+    radius: 130,
+    reverse: false,
+    size: "h-[30px] w-[30px]",
+  },
+  {
+    icon: SiFirebase,
+    duration: 30,
+    delay: 25,
+    radius: 130,
     reverse: true,
     size: "h-[30px] w-[30px]",
   },
