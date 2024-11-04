@@ -1,14 +1,16 @@
 import "./globals.css";
 
-import { Inter, Dancing_Script } from "next/font/google";
+import { Inter, Carattere } from "next/font/google";
 
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar from "@/components/ui/navbar";
 import { constructMetadata } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
-const dancing = Dancing_Script({ subsets: ["latin"] });
-
+const carattere = Carattere({
+  subsets: ["latin"],
+  weight: "400",
+});
 export const metadata = constructMetadata();
 
 export default function RootLayout({

@@ -52,7 +52,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex justify-center">
-              <span className="whitespace-nowrap font-['Dancing_Script'] text-xl font-bold sm:text-2xl">
+              <span className="whitespace-nowrap font-['Carattere'] text-xl font-bold sm:text-2xl">
                 Shane Le
               </span>
             </div>
